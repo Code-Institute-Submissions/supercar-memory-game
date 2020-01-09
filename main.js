@@ -26,7 +26,7 @@ var windowImages = []; // container for images
         message.innerHTML = "Click any window"; // message to player to click on a window
       }
     }
-    
+
     function buildArray() {
       for (var x = 1; x < 13; x++) {  // x = 1 continue the for loop while x is less than 13
         windowImages.push(x + '.jpg'); // pushing supercar images to the layout
@@ -56,7 +56,7 @@ var windowImages = []; // container for images
             }
           } else {
             message.innerHTML = "Sorry No Match have another go";
-            timer = setInterval(hideCard, 1000);
+            timer = setInterval(hideCard, 2000);// interval timer will have a 2 second delay before the pair of non matched windows returns to unclicked windows
           }
         } else {
           cardFlipped = windowIndex;
