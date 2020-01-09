@@ -27,3 +27,45 @@
   font-size: 10px;
   text-decoration: none;
 }
+
+/* For mobile devices */
+@media(min-width: 313px){
+  .flipImage {
+    width: 70px;
+}
+}
+  
+  /* For mobile devices */
+@media(min-width: 387px){
+  .flipImage {
+    width: 80px;
+}
+}
+
+ /* For mobile devices */
+ @media(min-width: 410px){
+  .flipImage {
+    width: 100px;
+}
+}
+
+  /* For mobile devices */
+@media(min-width: 768px){
+  .flipImage {
+    width: 150px;
+}
+}
+
+  /* For mobile devices */
+@media(min-width: 1024px){
+  .flipImage {
+    width: 150px;
+}
+}
+
+   /* For mobile devices */
+@media(min-width: 1366px){
+  .flipImage {
+    width: 200px;
+}
+}
