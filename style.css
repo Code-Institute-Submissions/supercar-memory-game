@@ -1,1 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/* begin button styling */
+  .btn {
+    background: green;
+    text-align: center;
+    font-family: "Exo", sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+/* layout styling */
+  .layOut {
+    display: inline-block;
+    border: 1px solid blue;
+    
+  }
+
+  
+/* begin button styling */
+.message {
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  color: black;
+  font-size: 10px;
+  text-decoration: none;
+}
