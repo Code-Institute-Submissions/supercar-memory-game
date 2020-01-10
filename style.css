@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+
+
+
+
 /* For mobile devices */
 @media(min-width: 313px){
   .flipImage {
@@ -45,21 +49,21 @@
  /* For mobile devices */
  @media(min-width: 410px){
   .flipImage {
-    width: 100px;
+    width: 80px;
 }
 }
 
   /* For mobile devices */
 @media(min-width: 768px){
   .flipImage {
-    width: 150px;
+    width: 130px;
 }
 }
 
   /* For mobile devices */
 @media(min-width: 1024px){
   .flipImage {
-    width: 150px;
+    width: 170px;
 }
 }
 
@@ -69,3 +73,8 @@
     width: 200px;
 }
 }
+
+
+
+
+
