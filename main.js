@@ -28,7 +28,7 @@ var windowImages = []; // container for images
     }
 
     function buildArray() {
-      for (var x = 1; x < 21; x++) {  // x = 1 continue the for loop while x is less than 13
+      for (var x = 1; x < 21; x++) {  // x = 1 continue the for loop while x is less than 21
         windowImages.push(x + '.jpg'); // pushing supercar images to the layout
       }
     }
