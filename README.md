@@ -71,6 +71,8 @@ I used Visual Studio Code with it's live server and console tools to test HTML,C
 
 I also used Google Chrome Dev Tools to inpect the page and work out mobile pixel sizes to apply to CSS media queries.
 
+The wireframe of the original concept can be found in the wireframe folder.
+
 
 MEDIA SOURCED.
 
