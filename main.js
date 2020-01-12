@@ -1,4 +1,4 @@
-var windowImages = []; // container for images
+ var windowImages = []; // container for images
     var windowArray = [];
     var windowFlippedOver = [];
     var cardFlipped = -1;
@@ -35,7 +35,7 @@ var windowImages = []; // container for images
     function buildBoard() {
       var html = "";
       for (var x = 0; x <= (windowArray.length - 1); x++) {
-        html += '<div class="layOut"><div class="layOut">';
+        html += '<div class="layOut"><div class="layOut">';  // game windows built using green image back with question mark
         html += '<img id="' + x + '" src="images/back 3.jpg" onclick="pickCard(' + x + ',this)" class="flipImage"></div></div>';
       }
       layout.innerHTML = html;
@@ -70,7 +70,7 @@ var windowImages = []; // container for images
     function hideCard() {
       for (var x = 0; x < 2; x++) {
         var vid = windowFlippedOver.pop();
-        document.getElementById(vid).src = "images/back 4.jpg";
+        document.getElementById(vid).src = "images/back 4.jpg"; // game windows flipped and rebuilt using yellow image back with question mark
       }
       clearInterval(timer);
       playLockout = false;
