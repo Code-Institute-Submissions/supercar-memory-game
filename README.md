@@ -92,6 +92,11 @@ codepen,
 Easy Steps Resources,
 Sololearn,
 
+COOKIE POLICY.
+
+JavaScript cookie code with references to wikipedia has been written in the footer of the main page and allows users to enhance
+their experience by clicking the 'X' button.
+
 
 I hope I have covered everything, so please enjoy the game.
 
