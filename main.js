@@ -7,11 +7,11 @@ var windowImages = []; // container for images
     var gamePlay = false; 
 
     var runButton = document.getElementById('run'); // to begin the game
-    var layOut = document.getElementById('layout'); // layout of game
-    var message = document.getElementById('message'); // messages to player at top of layout
+    var layOut = document.getElementById('layout');
+    var message = document.getElementById('message');
 
     
-    runButton.addEventListener('click', runGame); // event listens to run button to begin the game once clicked
+    runButton.addEventListener('click', runGame); //event listens
 
     function runGame() {
       cardFlipped = -1;
@@ -22,21 +22,21 @@ var windowImages = []; // container for images
         buildArray();
         windowArray = windowImages.concat(windowImages);
         shuffleArray(windowArray);
-        buildGrid();
-        message.innerHTML = "Click any window"; // message to player to click on a window
+        buildBoard();
+        message.innerHTML = "Click any window";
       }
     }
 
     function buildArray() {
-      for (var x = 1; x < 21; x++) {  // x = 1 continue the for loop while x is less than 21
-        windowImages.push(x + '.jpg'); // pushing supercar images to the layout
+      for (var x = 1; x < 21; x++) {
+        windowImages.push(x + '.jpg');
       }
     }
-    function buildGrid() {
+    function buildBoard() {
       var html = "";
       for (var x = 0; x <= (windowArray.length - 1); x++) {
         html += '<div class="layOut"><div class="layOut">';
-        html += '<img id="' + x + '" src="images/back.jpg" onclick="pickCard(' + x + ',this)" class="flipImage"></div></div>';
+        html += '<img id="' + x + '" src="images/back 3.jpg" onclick="pickCard(' + x + ',this)" class="flipImage"></div></div>';
       }
       layout.innerHTML = html;
     }
@@ -56,7 +56,7 @@ var windowImages = []; // container for images
             }
           } else {
             message.innerHTML = "Sorry No Match have another go";
-            timer = setInterval(hideCard, 2000);// interval timer will have a 2 second delay before the pair of non matched windows returns to unclicked windows
+            timer = setInterval(hideCard, 1000);
           }
         } else {
           cardFlipped = windowIndex;
@@ -70,7 +70,7 @@ var windowImages = []; // container for images
     function hideCard() {
       for (var x = 0; x < 2; x++) {
         var vid = windowFlippedOver.pop();
-        document.getElementById(vid).src = "images/back.jpg";
+        document.getElementById(vid).src = "images/back 4.jpg";
       }
       clearInterval(timer);
       playLockout = false;
